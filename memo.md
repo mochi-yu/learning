@@ -170,8 +170,8 @@ Elementは**Key**を使ってWidgetを識別している。Keyは明示的に設
 
 Keyとしてどちらもnullを持つ同じ種類のWidgetでそれらを入れ替えたときを考える。Widgetツリーでのオブジェクトは入れ替えわるものの、ElementツリーからはKeyとWidgetのタイプが同じであるため、変更を検知できず再描画が行われない。
 ```
-O 　StatefulTile(),
-X　 StatefulTile(key: UniqueKey()),
+X 　StatefulTile(),
+O　 StatefulTile(key: UniqueKey()),
 ```
 
 ### BuildContext
