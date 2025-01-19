@@ -73,7 +73,7 @@ func TestParallel(t *testing.T) {
 	}
 }
 
-// このファイルのテスト全体の前処理
+// テスト全体の前処理
 func TestMain(m *testing.M) {
 	log.Print("before all test.")
 	status := m.Run() // 全てのテストを実行
