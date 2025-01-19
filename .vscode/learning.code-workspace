@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": ".."
+		},
+		{
+			"name": "Go言語",
+			"path": "../golang"
+		},
+		{
+		"name": "AR",
+		"path": "../AR",
+		},
+		{
+		"name": "discord-bot",
+		"path": "../discord-bot"
+		},
+		{
+			"name": "Docker",
+			"path": "../docker"
+		},
+		{
+			"name": "Flutter",
+			"path": "../flutter"
+		},
+		{
+			"name": "OpenCV",
+			"path": "../opencv"
+		}
+	],
+	"settings": {}
+}
