@@ -19,7 +19,7 @@ func TestPrimitiveCopy(t *testing.T) {
 func TestSliceCopy(t *testing.T) {
 	b1 := make([]int, 2)
 	b2 := b1
-	b3 := make([]int, 2)
+	b3 := make([]int, len(b1))
 	copy(b3, b1)
 
 	b2[0] = 99  // b1とb2は同じもの
