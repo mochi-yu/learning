@@ -67,18 +67,19 @@ func TestMapCopy(t *testing.T) {
 	}
 }
 
+// 構造体のコピーの挙動に関するテスト
 type MyTypeTestObject struct {
 	Str string
 	Arr []int
 }
 
-func TestStruct(t *testing.T) {
+func TestStructCopy(t *testing.T) {
 	e1 := MyTypeTestObject{Str: "test", Arr: []int{1, 2}}
 	e2 := e1
 
 	t.Logf("e1 addr = %p, e2 addr = %p", &e1, &e2)
 	e2.Str = "TEST" // e1とe2は違うインスタンス
-	e2.Arr[0] = 99  // だが、内部の配列は同じインスタンス
+	e2.Arr[0] = 99  // だが、内部のスライスは同じインスタンス
 
 	t.Logf("e1.Str = %s, e2.Str = %s", e1.Str, e2.Str)
 	if e1.Str == e2.Str {
